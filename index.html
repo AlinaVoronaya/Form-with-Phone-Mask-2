@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+
+<section class="form">
+    <h1 class="form__title">Вход</h1>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post" id="form">
+        <div class="form__inputs">
+            <div class="form__input">
+                <label for="phone" class="form__label">Введите номер телефона:</label>
+                <input type="tel" placeholder="+7 (___) ___-__-__" name="phone" id="phone" class="phone" maxlength="18">
+                <span class="form__hint phone-hint"></span>
+            </div>
+            <div class="form__input">
+                <label for="password" class="form__label">Введите пароль</label>
+                <div class="form__password password">
+                    <input type="password" name="password" placeholder="******" class="password__input" id="password">
+                    <img src="./assets/eye.svg" alt="eye" class="password__eye">
+                </div>
+                <span class="form__hint password-hint"></span>
+            </div>
+        </div>
+        <button type="submit" class="form__btn" value="SUBMIT">Войти</button>
+    </form>
+</section>
+
+</body>
+</html>
